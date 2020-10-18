@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <name>elasticsearch-minhash</name>
+    <name>last-word-decompounder</name>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.hering</groupId>
     <artifactId>last-word-decompounder</artifactId>
     <version>7.9.2-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <description>Last word decompounder for German language.</description>
-    <inceptionYear>2011</inceptionYear>
-    <url>https://github.com/codelibs/elasticsearch-minhash</url>
+    <description>Last word decompounder for smarter German language decompounding.</description>
+    <inceptionYear>2020</inceptionYear>
+    <url>https://github.com/stefan-hering/last-word-decompounder</url>
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -17,11 +17,6 @@
         </license>
     </licenses>
 
-    <parent>
-        <groupId>org.sonatype.oss</groupId>
-        <artifactId>oss-parent</artifactId>
-        <version>9</version>
-    </parent>
     <properties>
         <kotlin.version>1.4.10</kotlin.version>
         <elasticsearch.version>7.9.2</elasticsearch.version>
