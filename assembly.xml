@@ -1,0 +1,23 @@
+<assembly>
+    <formats>
+        <format>zip</format>
+    </formats>
+
+    <includeBaseDirectory>false</includeBaseDirectory>
+    
+    <fileSets>
+        <fileSet>
+            <includes>
+                <include>LICENSE.txt</include>
+                <include>NOTICE.txt</include>
+                <include>plugin-descriptor.properties</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>target</directory>
+            <includes>
+                <include>last-word-decompounder-*.jar</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</assembly>

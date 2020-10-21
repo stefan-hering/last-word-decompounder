@@ -4,5 +4,5 @@ import org.elasticsearch.plugins.IngestPlugin
 import org.elasticsearch.plugins.Plugin
 
 
-class ExampleRescorePlugin() : Plugin(), IngestPlugin {
+class LastWordDecompounderPlugin() : Plugin(), IngestPlugin {
 }
