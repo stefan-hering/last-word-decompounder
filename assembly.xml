@@ -15,8 +15,16 @@
         </fileSet>
         <fileSet>
             <directory>target</directory>
+            <outputDirectory></outputDirectory>
             <includes>
                 <include>last-word-decompounder-*.jar</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>target/lib</directory>
+            <outputDirectory></outputDirectory>
+            <includes>
+                <include>kotlin-stdlib-*.jar</include>
             </includes>
         </fileSet>
     </fileSets>

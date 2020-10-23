@@ -8,7 +8,6 @@ import java.nio.file.Paths
 
 class DecompounderIntegrationTest {
 
-
     companion object {
         lateinit var elastic:GenericContainer<*>;
         @BeforeClass
@@ -20,10 +19,9 @@ class DecompounderIntegrationTest {
                                     // TODO works on my machine
                                     Paths.get("c:\\workspace\\last-word-decompounder\\target\\last-word-decompounder.zip"))
                             .withDockerfileFromBuilder { builder ->
-                                builder.from("elasticsearch:7.9.2")
+                                builder.from("elasticsearch:7.9.3")
                                         .copy("last-word-decompounder.zip", "/tmp")
                                         .run("bin/elasticsearch-plugin", "install", "file:///tmp/last-word-decompounder.zip")
-                                        .run("bin/elasticsearch-plugin", "install", "analysis-icu")
                                         .env("discovery.type", "single-node")
                                         .build()
                             })
